@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <title>Astronomy</title>
+  <script src="js/index.js" ></script>
+  <style>
+    body, h1 { font-family: "Montserrat", sans-serif }
+    
+    img { width: 100%; object-fit: cover;}
+    
+    .container { 
+      position: relative;
+      width: fit-content;
+      height: fit-content; 
+    }
+
+    .copyright-label {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-opacity">
+    <header class="w3-center w3-margin-bottom">
+      <h1><b>Astronomy</b></h1>
+    <!-- 
+      Todo: button to reload images, hopefully without page reload and using an animation.
+      <p class="w3-padding-16">
+        <button class="w3-button w3-black" onclick="loadImageData()">
+          <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-refresh-arrows-dreamstale-lineal-dreamstale-2.png" />  
+        </button>
+      </p>
+    -->
+    </header>    
+  </div>
+
+  <div class="w3-content" style="max-width: 1500px;">
+      <div class="w3-row" id="imageDiv"></div>
+      <div id="oops" class="w3-center" style="display: none;" >
+        <h1 style="align-content: center;">
+          <p>Oops, looks like we went for a walk!<br />Try back later...</p>
+        </h1>
+        <img src="images/spaced.png" />        
+        <p>Illustration by <a href="https://icons8.com/illustrations/author/625472">Ekaterina Rogova</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+      </div>
+  </div>
+  <script>
+    loadImageData();
+  </script>
+</body>
+</html>

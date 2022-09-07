@@ -1,22 +1,38 @@
+
+<!Doctype html>
 <html>
-    <head>
-        <title>Image Gallery</title>
-    </head>
-    <body>
-        <h2 style='text-align: center;'> Image Gallery</h2>
-        <h3> Click the Below Link to Explore Different Categories of Images</h3>
-        <div>
-            <a href='flowers.html' ><h2>Flowers</span></h2>
-        </div>
-        <div>
-            <a href='carimages.html' ><h2>Cars</span></h2>
-        </div>
-        <div>
-            <a href='astro/index.html' ><h2>Astronomy</span></h2>
-        </div>
-        <div>
-            <a href='animals.html' ><h2>Animals</span></h2>
-        </div>
-    </body>
+<style>
+    .btn-group button {
+        background-color: #04AA6D;
+        border: 1px solid green;
+        color: white;
+        padding: 10px 24px;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+    }
+
+    .btn-group button:not(:last-child) {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .btn-group button:hover {
+        background-color: #3e8e41;
+    }
+</style>
+
+<body>
+    <h2 style='text-align: center;'> Image Gallery</h2>
+    <h3 style='text-align: center;'> Click the Below Link to Explore Different Categories of Images</h3>
+
+    <div class="btn-group">
+        <a  href='flowers.html'><button>Flowers</button></a>
+        <a href='astro/index.html'><button >Astronomy</button></a>
+        <a href='animals.html'><button>Animals</button></a>
+        <a href='carimages.html'><button>Cars</button></a>
+    </div>
+
+</body>
 
 </html>
